@@ -5,63 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTWIST - FAQ</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
 </head>
 <body>
 <div class="sidebar">
     <h1>NTWIST</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Contact Form</a></li>
-            <li><a href="sort.html">Sortable List</a></li>
-            <li><a href="faq.html" class="active">FAQ Accordion</a></li>
+            <li><a href="index.html">Feedback Form</a></li>
+            <li><a href="sort.html">View Submissions</a></li>
+            <li class="active"><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
 </div>
-
-<div class="main-content">
+<main>
     <h2>Frequently Asked Questions</h2>
-
     <div class="faq-container">
         <div class="faq-item">
-            <input type="checkbox" id="question1" class="faq-toggle">
-            <label for="question1" class="faq-question">What services does NTWIST offer?</label>
+            <input type="checkbox" id="q1" class="faq-toggle">
+            <label for="q1" class="faq-question">What is this application for?</label>
             <div class="faq-answer">
-                <p>NTWIST offers advanced analytics and optimization solutions for industrial processes, helping companies improve efficiency and reduce costs through data-driven insights.</p>
+                <p>This is a feedback collection application that allows users to submit their feedback which is then stored and can be viewed in the submissions page.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <input type="checkbox" id="question2" class="faq-toggle">
-            <label for="question2" class="faq-question">How can I contact NTWIST support?</label>
+            <input type="checkbox" id="q2" class="faq-toggle">
+            <label for="q2" class="faq-question">How are the submissions stored?</label>
             <div class="faq-answer">
-                <p>You can contact our support team through the contact form on our website, or by emailing support@ntwist.com. Our team typically responds within 24 hours.</p>
+                <p>Submissions are stored in the browser's local storage, which means they persist even after the browser is closed but are specific to the device and browser used.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <input type="checkbox" id="question3" class="faq-toggle">
-            <label for="question3" class="faq-question">What industries does NTWIST serve?</label>
+            <input type="checkbox" id="q3" class="faq-toggle">
+            <label for="q3" class="faq-question">Can I edit my submission after sending?</label>
             <div class="faq-answer">
-                <p>NTWIST primarily serves mining, oil & gas, and manufacturing industries with our process optimization and analytics solutions.</p>
+                <p>Currently, there's no edit functionality. You would need to submit a new feedback form if you want to update your information.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <input type="checkbox" id="question4" class="faq-toggle">
-            <label for="question4" class="faq-question">Is there a free trial available?</label>
+            <input type="checkbox" id="q4" class="faq-toggle">
+            <label for="q4" class="faq-question">Is my data secure?</label>
             <div class="faq-answer">
-                <p>Yes, we offer a limited free trial of our software. Please contact our sales team to discuss trial options for your specific needs.</p>
+                <p>Your data is stored locally in your browser and isn't sent to any server. However, anyone with access to your device can view the submissions.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <input type="checkbox" id="question5" class="faq-toggle">
-            <label for="question5" class="faq-question">What are the system requirements?</label>
+            <input type="checkbox" id="q5" class="faq-toggle">
+            <label for="q5" class="faq-question">How can I clear all submissions?</label>
             <div class="faq-answer">
-                <p>Our web-based platform works on most modern browsers. For optimal performance, we recommend Chrome or Firefox with at least 8GB of RAM.</p>
+                <p>You can clear all submissions by clearing your browser's local storage for this website.</p>
             </div>
         </div>
     </div>
-</div>
+</main>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTWIST - Sortable List</title>
+    <title>NTWIST - Submissions</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,27 +11,17 @@
     <h1>NTWIST</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Contact Form</a></li>
-            <li><a href="sort.html" class="active">Sortable List</a></li>
-            <li><a href="faq.html">FAQ Accordion</a></li>
+            <li><a href="index.html">Feedback Form</a></li>
+            <li class="active"><a href="sort.html">View Submissions</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
 </div>
-
-<div class="main-content">
-    <h2>Sortable List</h2>
-    <button id="sortButton" class="sort-btn">Sort Alphabetically</button>
-
-    <ul id="nameList">
-        <li>shakti</li>
-        <li>anil</li>
-        <li>Olivia</li>
-        <li>Noah</li>
-        <li>Ava</li>
-        <li>Benjamin</li>
-    </ul>
-</div>
-
+<main>
+    <h2>Feedback Submissions</h2>
+    <button id="sortButton">Sort Alphabetically (A-Z)</button>
+    <div id="submissionsList"></div>
+</main>
 <script src="assets/js/sort.js"></script>
 </body>
 </html>
