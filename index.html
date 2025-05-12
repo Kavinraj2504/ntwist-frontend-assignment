@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTWIST - Contact Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <h1>NTWIST</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Contact Form</a></li>
+            <li><a href="sort.html">Sortable List</a></li>
+            <li><a href="faq.html">FAQ Accordion</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main-content">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2"
+                   pattern="[A-Za-z ]+" title="Please enter a valid name (letters only)">
+            <span class="error-message" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10"></textarea>
+            <span class="error-message" id="messageError"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Rate your experience (optional):</label>
+            <div class="rating-widget">
+                <span class="star" data-value="1">☆</span>
+                <span class="star" data-value="2">☆</span>
+                <span class="star" data-value="3">☆</span>
+                <span class="star" data-value="4">☆</span>
+                <span class="star" data-value="5">☆</span>
+                <input type="hidden" id="rating" name="rating" value="0">
+            </div>
+        </div>
+
+        <div class="form-footer">
+            <p id="timeSpent">Time spent: 0 seconds</p>
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+
+    <div id="successMessage" class="success-message hidden">
+        <h3>Thank you for your submission!</h3>
+        <p>Your message has been successfully sent.</p>
+        <p>Time spent: <span id="finalTime">0</span> seconds</p>
+        <p>Rating given: <span id="finalRating">0</span> stars</p>
+    </div>
+</div>
+
+<script src="assets/js/form.js"></script>
+<script src="assets/js/rating.js"></script>
+</body>
+</html>
